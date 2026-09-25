@@ -96,6 +96,7 @@
   .grid{display:grid; gap:24px;}
   .grid-3{grid-template-columns:repeat(3,1fr);}
   .grid-4{grid-template-columns:repeat(4,1fr);}
+  .grid-5{grid-template-columns:repeat(5,1fr);}
   .grid-2{grid-template-columns:repeat(2,1fr);}
 
   .card{
@@ -122,6 +123,13 @@
 
   /* Producto */
   #producto{background:var(--ivory-2);}
+  #capacidades{background:var(--cream);}
+  .cap-card{display:flex; flex-direction:column; gap:12px;}
+  #baas{background:var(--ivory-2);}
+  .baas-pill{font-size:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase; border-radius:100px; padding:5px 14px; width:fit-content;}
+  #rieles-activos{background:var(--cream);}
+  #rendimientos{background:var(--ivory-2);}
+  .rail-pill{display:inline-block; font-size:15px; font-weight:600; border-radius:100px; padding:7px 18px; margin:4px 8px 0 0;}
   .solucion-card p.desc{font-size:19px; font-weight:300; margin-top:10px;}
 
   /* Cobertura global */
@@ -183,6 +191,7 @@
 
   @media (max-width: 900px){
     .grid-4{grid-template-columns:repeat(2,1fr);}
+    .grid-5{grid-template-columns:repeat(3,1fr);}
     .grid-3{grid-template-columns:1fr;}
     .grid-2{grid-template-columns:1fr;}
     .hero h1{font-size:42px;}
@@ -193,6 +202,7 @@
   }
   @media (max-width: 600px){
     .grid-4{grid-template-columns:1fr;}
+    .grid-5{grid-template-columns:repeat(2,1fr);}
     .hero{padding:80px 20px 0;}
     section{padding:64px 0;}
     .wrap{padding:0 20px;}
@@ -235,8 +245,9 @@
       <span>Rocah Pay</span>
     </div>
     <nav class="nav-links">
-      <a href="#producto">Producto</a>
+      <a href="#capacidades">Producto</a>
       <a href="#baas">Banking as a Service</a>
+      <a href="#rendimientos">Rendimientos</a>
       <a href="#cobertura">Cobertura</a>
       <a href="#confianza">Confianza</a>
       <a href="#equipo">Equipo</a>
@@ -309,31 +320,155 @@
   </div>
 </section>
 
+<section id="capacidades">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Capacidades</p>
+      <div class="bar"></div>
+      <h2>Todo lo que necesitas en una sola plataforma</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card cap-card">
+        <div class="icon">✓</div>
+        <h3 style="font-size:20px;">Cumplimiento primero</h3>
+        <p style="font-size:16px;">KYC, KYB y KYT integrados desde el primer flujo — cumplimiento antes que crecimiento.</p>
+      </div>
+      <div class="card cap-card">
+        <div class="icon">◎</div>
+        <h3 style="font-size:20px;">Cuentas virtuales multimoneda</h3>
+        <p style="font-size:16px;">Recepción directa en USD, EUR y más monedas FIAT, con interoperabilidad entre cuentas.</p>
+      </div>
+      <div class="card cap-card">
+        <div class="icon">◈</div>
+        <h3 style="font-size:20px;">Activos digitales</h3>
+        <p style="font-size:16px;">USDC, USDT y más de 8 stablecoins latinoamericanas.</p>
+      </div>
+      <div class="card cap-card">
+        <div class="icon">⇄</div>
+        <h3 style="font-size:20px;">Rieles de pago locales</h3>
+        <p style="font-size:16px;">ACH, PIX, Bre-B y SPEI/CLABE, con liquidación el mismo día a bancos tradicionales.</p>
+      </div>
+      <div class="card cap-card">
+        <div class="icon">▭</div>
+        <h3 style="font-size:20px;">Tarjeta Visa Global</h3>
+        <p style="font-size:16px;">Física y digital, para empresas y personas, con aceptación internacional.</p>
+      </div>
+      <div class="card cap-card">
+        <div class="icon">▤</div>
+        <h3 style="font-size:20px;">Panel institucional</h3>
+        <p style="font-size:16px;">Trazabilidad de transacciones y reportes para clientes B2B y compliance.</p>
+      </div>
+      <div class="card dark cap-card">
+        <div class="icon">%</div>
+        <h3 style="font-size:20px;">Rendimientos financieros</h3>
+        <p style="font-size:16px;">Earn en USDC y USDT hasta 18.25% APY. Estrategia autocustodio y market-neutral.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="baas">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Banking as a Service</p>
       <div class="bar"></div>
       <h2>Cuentas virtuales, listas para operar globalmente</h2>
-      <p>Además de nuestros dos productos principales, contamos con Banking as a Service: apertura de cuentas virtuales (Virtual Accounts) para operar en distintas monedas sin abrir cuentas bancarias tradicionales en cada país.</p>
+      <p>Apertura de cuentas virtuales (Virtual Accounts) multimoneda, con interoperabilidad entre cuentas, sin abrir cuentas bancarias tradicionales en cada país.</p>
     </div>
-    <div class="grid grid-3">
+    <div class="grid grid-5">
       <div class="card">
-        <p class="tag" style="color:#2E7D5B;">Disponible</p>
-        <h3 style="font-size:24px;">Estados Unidos · USD</h3>
-        <p>Apertura de cuentas virtuales en dólares, listas para recibir y enviar fondos.</p>
+        <p class="baas-pill" style="color:#2E7D5B; background:rgba(46,125,91,0.10);">Disponible</p>
+        <h3 style="font-size:22px; margin-top:10px;">USD</h3>
+        <p style="font-size:15px;">Dólar estadounidense</p>
       </div>
       <div class="card">
-        <p class="tag" style="color:#2E7D5B;">Disponible</p>
-        <h3 style="font-size:24px;">Europa · EUR</h3>
-        <p>Apertura de cuentas virtuales en euros, listas para recibir y enviar fondos.</p>
+        <p class="baas-pill" style="color:#2E7D5B; background:rgba(46,125,91,0.10);">Disponible</p>
+        <h3 style="font-size:22px; margin-top:10px;">EUR</h3>
+        <p style="font-size:15px;">Euro</p>
       </div>
       <div class="card dark">
-        <p class="tag">Próximamente</p>
-        <h3 style="font-size:24px;">Asia</h3>
-        <p>Cuentas virtuales en monedas asiáticas, en desarrollo.</p>
+        <p class="baas-pill" style="color:var(--gold); background:rgba(199,162,92,0.14);">Próximamente</p>
+        <h3 style="font-size:22px; margin-top:10px;">CHF</h3>
+        <p style="font-size:15px;">Franco suizo</p>
+      </div>
+      <div class="card dark">
+        <p class="baas-pill" style="color:var(--gold); background:rgba(199,162,92,0.14);">Próximamente</p>
+        <h3 style="font-size:22px; margin-top:10px;">CNY</h3>
+        <p style="font-size:15px;">Yuan chino</p>
+      </div>
+      <div class="card dark">
+        <p class="baas-pill" style="color:var(--gold); background:rgba(199,162,92,0.14);">Próximamente</p>
+        <h3 style="font-size:22px; margin-top:10px;">HKD</h3>
+        <p style="font-size:15px;">Dólar de Hong Kong</p>
       </div>
     </div>
+    <p style="font-size:14px; color:var(--muted); margin-top:24px; font-style:italic;">Monedas y cuentas adicionales se habilitan según demanda de mercado y avance regulatorio.</p>
+  </div>
+</section>
+
+<section id="rieles-activos">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Activos y rieles</p>
+      <div class="bar"></div>
+      <h2>Cómo se mueve el dinero dentro de Rocah Pay</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card dark">
+        <p class="tag">Activos digitales</p>
+        <h3 style="margin-top:8px;">USDC, USDT y stablecoins LATAM</h3>
+        <p class="desc">Más de 8 stablecoins latinoamericanas — COP, MXN, BRL, ARS y más.</p>
+        <div style="margin-top:14px;">
+          <span class="rail-pill" style="background:var(--gold); color:var(--navy);">USDC</span>
+          <span class="rail-pill" style="background:var(--gold); color:var(--navy);">USDT</span>
+          <span class="rail-pill" style="background:rgba(255,255,255,0.12); color:var(--cream);">COP</span>
+          <span class="rail-pill" style="background:rgba(255,255,255,0.12); color:var(--cream);">MXN</span>
+          <span class="rail-pill" style="background:rgba(255,255,255,0.12); color:var(--cream);">BRL</span>
+          <span class="rail-pill" style="background:rgba(255,255,255,0.12); color:var(--cream);">ARS</span>
+          <span class="rail-pill" style="background:rgba(255,255,255,0.12); color:var(--cream);">+8 más</span>
+        </div>
+      </div>
+      <div class="card">
+        <p class="tag">Rieles de pago local</p>
+        <h3 style="margin-top:8px;">Liquidación el mismo día</h3>
+        <p class="desc">Pagos directos a bancos tradicionales sobre los rieles locales de cada país, sin corresponsalía bancaria.</p>
+        <div style="margin-top:14px;">
+          <span class="rail-pill" style="background:rgba(52,91,132,0.12); border:1px solid var(--blue); color:var(--navy);">ACH</span>
+          <span class="rail-pill" style="background:rgba(52,91,132,0.12); border:1px solid var(--blue); color:var(--navy);">PIX</span>
+          <span class="rail-pill" style="background:rgba(52,91,132,0.12); border:1px solid var(--blue); color:var(--navy);">Bre-B</span>
+          <span class="rail-pill" style="background:rgba(52,91,132,0.12); border:1px solid var(--blue); color:var(--navy);">SPEI / CLABE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rendimientos">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Rendimientos financieros</p>
+      <div class="bar"></div>
+      <h2>Haz crecer tus activos digitales, sin perder el control</h2>
+      <p>Earn en USDC y USDT con una estrategia autocustodio y market-neutral, sin exposición direccional al precio de los activos digitales.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card dark">
+        <p class="tag" style="color:var(--gold);">Rendimiento</p>
+        <h3 style="margin-top:8px; font-size:38px;">Hasta 18.25% APY</h3>
+        <p>Earn en USDC y USDT, con reportes claros para tesorería corporativa y personas.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Autocustodio</p>
+        <h3 style="margin-top:8px;">El control siempre es tuyo</h3>
+        <p class="desc">Tus activos permanecen bajo tu control en todo momento; no requiere ceder custodia a un tercero.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Market-neutral</p>
+        <h3 style="margin-top:8px;">Sin exposición direccional</h3>
+        <p class="desc">El rendimiento proviene de una estrategia de mercado neutral, no de apostar al alza o a la baja del precio.</p>
+      </div>
+    </div>
+    <p style="font-size:14px; color:var(--muted); margin-top:24px; font-style:italic;">Los rendimientos son variables, no están garantizados y dependen de las condiciones del mercado. Esta información es ilustrativa; Rocah Pay no actúa como asesor financiero y este contenido no constituye una recomendación de inversión.</p>
   </div>
 </section>
 
@@ -444,9 +579,10 @@
     <div class="footer-cols">
       <div class="footer-col">
         <h4>Producto</h4>
-        <a href="#producto">Adquirencia FIAT</a>
-        <a href="#producto">Rampas globales</a>
+        <a href="#capacidades">Capacidades</a>
         <a href="#baas">Banking as a Service</a>
+        <a href="#rieles-activos">Activos y rieles</a>
+        <a href="#rendimientos">Rendimientos financieros</a>
       </div>
       <div class="footer-col">
         <h4>Compañía</h4>
